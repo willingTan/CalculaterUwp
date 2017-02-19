@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="text.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:text"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="c1" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="1" Click="c1_Click" Margin="0,0,0,-0.333" >1</Button>
+        <Button x:Name="c2" Grid.Row="3" Grid.Column="1" Margin="0,0,0,-0.333" VerticalAlignment="Stretch" Grid.RowSpan="1" HorizontalAlignment="Stretch" Click="c2_Click" >2</Button>
+        <Button x:Name="c3" Grid.Row="3" Grid.Column="2" Grid.RowSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,-0.333" Click="c3_Click">3</Button>
+        <Button x:Name="add" Grid.Row="3" Grid.Column="3" Grid.RowSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,-0.333" Click="add_Click">+</Button>
+        <Button x:Name="c4" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0.333,0,0" Click="c4_Click">4</Button>
+        <Button x:Name="c5" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0.333,0,0" Click="c5_Click">5</Button>
+        <Button x:Name="c6" Grid.Row="4" Grid.Column="2" Margin="0,0.333,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="c6_Click">6</Button>
+        <Button x:Name="minus" Grid.Row="4" Grid.Column="3" Margin="0,0.333,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="minus_Click">-</Button>
+        <Button x:Name="c7" Grid.Row="5" Grid.Column="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,-0.333" Grid.RowSpan="1" Click="c7_Click">7</Button>
+        <Button x:Name="c8" Grid.Row="5" Grid.Column="1" Grid.RowSpan="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,-0.333" Click="c8_Click">8</Button>
+        <Button x:Name="c9" Grid.Row="5" Grid.Column="2" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,-0.333" Click="c9_Click">9</Button>
+        <Button x:Name="clear" Grid.Row="5" Grid.Column="3" Grid.RowSpan="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,0,-0.333" Click="clear_Click">归零</Button>
+        <Button x:Name="c0" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0.333,0,0" Click="c0_Click">0</Button>
+        <Button x:Name="multiply" Grid.Row="6" Grid.Column="1" Margin="0,0.333,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="multiply_Click">*</Button>
+        <Button x:Name="divide" Grid.Row="6" Grid.Column="2" Margin="0,0.333,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="divide_Click">/</Button>
+        <Button x:Name="Is" Grid.Row="6" Grid.Column="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0.333,0,0" Click="Is_Click">=</Button>
+        <TextBlock Name="name" Grid.Row="0" TextAlignment="Center" FontSize="36" Grid.ColumnSpan="4" Margin="0,0,0,0.333" >简易计算器</TextBlock>
+        <TextBox Name=" In" Grid.Row="1" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="36" Text="" Margin="0,0.167,0,0.167" IsReadOnly="True" ></TextBox>
+        <TextBox Name=" Out" Grid.Row="2" Grid.ColumnSpan="4" TextAlignment="Right" FontSize="36" Text="" Margin="0,0.333,0,0" IsReadOnly="True" />
+    </Grid>
+</Page>
